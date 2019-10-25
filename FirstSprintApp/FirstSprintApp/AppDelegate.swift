@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  FirstSprintApp
-//
-//  Created by Artem Esolnyak on 26.10.2019.
-//  Copyright © 2019 Artem Esolnyak. All rights reserved.
-//
 
 import UIKit
 

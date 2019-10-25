@@ -13,6 +13,8 @@
 		95EE4E3923639B7B00A0F785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95EE4E3823639B7B00A0F785 /* Assets.xcassets */; };
 		95EE4E3C23639B7B00A0F785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95EE4E3A23639B7B00A0F785 /* LaunchScreen.storyboard */; };
 		95EE4E4423639B9200A0F785 /* MultyPlusFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */; };
+		95EE4E462363A1A200A0F785 /* AdditionFuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E452363A1A200A0F785 /* AdditionFuncViewController.swift */; };
+		95EE4E492363A88E00A0F785 /* BackGroundExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E482363A88E00A0F785 /* BackGroundExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		95EE4E3B23639B7B00A0F785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95EE4E3D23639B7B00A0F785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultyPlusFunc.swift; sourceTree = "<group>"; };
+		95EE4E452363A1A200A0F785 /* AdditionFuncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionFuncViewController.swift; sourceTree = "<group>"; };
+		95EE4E482363A88E00A0F785 /* BackGroundExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				95EE4E3123639B7700A0F785 /* AppDelegate.swift */,
-				95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */,
+				95EE4E472363A61100A0F785 /* Addition func */,
 				95EE4E3323639B7700A0F785 /* ViewController.swift */,
 				95EE4E3523639B7700A0F785 /* Main.storyboard */,
 				95EE4E3823639B7B00A0F785 /* Assets.xcassets */,
@@ -65,6 +69,16 @@
 				95EE4E3D23639B7B00A0F785 /* Info.plist */,
 			);
 			path = FirstSprintApp;
+			sourceTree = "<group>";
+		};
+		95EE4E472363A61100A0F785 /* Addition func */ = {
+			isa = PBXGroup;
+			children = (
+				95EE4E452363A1A200A0F785 /* AdditionFuncViewController.swift */,
+				95EE4E482363A88E00A0F785 /* BackGroundExtention.swift */,
+				95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */,
+			);
+			path = "Addition func";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EE4E462363A1A200A0F785 /* AdditionFuncViewController.swift in Sources */,
 				95EE4E3423639B7700A0F785 /* ViewController.swift in Sources */,
 				95EE4E3223639B7700A0F785 /* AppDelegate.swift in Sources */,
+				95EE4E492363A88E00A0F785 /* BackGroundExtention.swift in Sources */,
 				95EE4E4423639B9200A0F785 /* MultyPlusFunc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

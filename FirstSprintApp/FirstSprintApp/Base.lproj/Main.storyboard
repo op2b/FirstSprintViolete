@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,12 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstSprintApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAH-5G-cpK">
-                                <rect key="frame" x="79" y="214" width="257" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAH-5G-cpK">
+                                <rect key="frame" x="78" y="214" width="258" height="30"/>
                                 <color key="backgroundColor" red="0.5631336110674765" green="0.63433555910276873" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Универсальнеая функция сложения">
                                     <color key="titleColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -30,8 +27,28 @@
                                     <segue destination="8gc-Mp-BHs" kind="show" id="5S5-N1-Scn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac7-Ap-TB0">
+                                <rect key="frame" x="78" y="290" width="258" height="30"/>
+                                <color key="backgroundColor" red="0.56313361110000004" green="0.63433555909999995" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Енумный связаный список">
+                                    <color key="titleColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tf7-PM-Hca" kind="show" id="t9p-F8-uJN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ac7-Ap-TB0" firstAttribute="height" secondItem="cAH-5G-cpK" secondAttribute="height" id="1lX-H0-Ij9"/>
+                            <constraint firstItem="cAH-5G-cpK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="214" id="Ggg-Hh-MG8"/>
+                            <constraint firstItem="cAH-5G-cpK" firstAttribute="leading" secondItem="Ac7-Ap-TB0" secondAttribute="leading" id="H1D-tL-UwR"/>
+                            <constraint firstItem="Ac7-Ap-TB0" firstAttribute="width" secondItem="cAH-5G-cpK" secondAttribute="width" id="Q2P-Is-fhI"/>
+                            <constraint firstItem="Ac7-Ap-TB0" firstAttribute="top" secondItem="cAH-5G-cpK" secondAttribute="bottom" constant="46" id="kcW-ow-XpC"/>
+                            <constraint firstItem="cAH-5G-cpK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nIi-OM-loo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ac7-Ap-TB0" secondAttribute="trailing" constant="78" id="owS-Pa-gs2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -39,12 +56,99 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
+        <!--Enum ListVC-->
+        <scene sceneID="B7H-ZD-uci">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Tf7-PM-Hca" customClass="EnumListVC" customModule="FirstSprintApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4K3-8H-RsV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcP-jy-NlI">
+                                <rect key="frame" x="67.5" y="433" width="279" height="30"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aYG-gC-Xp2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="qPj-fY-A7A"/>
+                                </constraints>
+                                <state key="normal" title="  Добавить">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addElement:" destination="t0A-2p-zpR" eventType="touchUpInside" id="0i5-4b-d9o"/>
+                                    <action selector="addElement:" destination="Tf7-PM-Hca" eventType="touchUpInside" id="3r9-Cm-ZX2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIn-ff-k3E">
+                                <rect key="frame" x="68" y="471" width="278" height="30"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6u9-vF-16m"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="278" id="WIw-7G-ObP"/>
+                                </constraints>
+                                <state key="normal" title="Удалить элемент">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteElement:" destination="t0A-2p-zpR" eventType="touchUpInside" id="2oQ-2A-sen"/>
+                                    <action selector="deleteElement:" destination="Tf7-PM-Hca" eventType="touchUpInside" id="b4D-eI-KZj"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Что добавим?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-Wn-fAi">
+                                <rect key="frame" x="117.5" y="391" width="179" height="34"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="SAG-e4-mde"/>
+                                    <constraint firstAttribute="width" constant="179" id="ac3-XD-rAq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текущий список : " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDh-bu-LFx">
+                                <rect key="frame" x="68" y="199" width="278" height="162"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="IJR-Vh-IrJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mcP-jy-NlI" firstAttribute="top" secondItem="7RG-Wn-fAi" secondAttribute="bottom" constant="8" id="2Cj-Fp-LoX"/>
+                            <constraint firstItem="EDh-bu-LFx" firstAttribute="leading" secondItem="g5a-5N-gfV" secondAttribute="leading" constant="68" id="9Su-6V-aii"/>
+                            <constraint firstItem="mcP-jy-NlI" firstAttribute="centerY" secondItem="4K3-8H-RsV" secondAttribute="centerY" id="JIA-qI-qWE"/>
+                            <constraint firstItem="7RG-Wn-fAi" firstAttribute="top" secondItem="g5a-5N-gfV" secondAttribute="top" constant="347" id="Z6S-bm-Gkd"/>
+                            <constraint firstItem="EDh-bu-LFx" firstAttribute="top" secondItem="g5a-5N-gfV" secondAttribute="top" constant="155" id="ffx-oW-U5v"/>
+                            <constraint firstItem="mcP-jy-NlI" firstAttribute="centerX" secondItem="4K3-8H-RsV" secondAttribute="centerX" id="iHc-eh-j4q"/>
+                            <constraint firstItem="g5a-5N-gfV" firstAttribute="bottom" secondItem="dIn-ff-k3E" secondAttribute="bottom" constant="361" id="jjE-L2-63E"/>
+                            <constraint firstItem="dIn-ff-k3E" firstAttribute="centerX" secondItem="mcP-jy-NlI" secondAttribute="centerX" id="pi2-EZ-lxf"/>
+                            <constraint firstItem="7RG-Wn-fAi" firstAttribute="top" relation="lessThanOrEqual" secondItem="EDh-bu-LFx" secondAttribute="bottom" constant="30" id="x11-Lf-woo"/>
+                            <constraint firstItem="7RG-Wn-fAi" firstAttribute="centerX" secondItem="mcP-jy-NlI" secondAttribute="centerX" id="x4Z-H6-J98"/>
+                            <constraint firstItem="dIn-ff-k3E" firstAttribute="top" secondItem="mcP-jy-NlI" secondAttribute="bottom" constant="8" id="zHx-N0-6Xh"/>
+                            <constraint firstItem="g5a-5N-gfV" firstAttribute="trailing" secondItem="EDh-bu-LFx" secondAttribute="trailing" constant="68" id="zrJ-7X-gcp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g5a-5N-gfV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dtm-Hh-cmE"/>
+                    <connections>
+                        <outlet property="listLabel" destination="EDh-bu-LFx" id="BHT-TL-szo"/>
+                        <outlet property="textField" destination="7RG-Wn-fAi" id="HiB-qq-1EF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wio-aA-zor" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="t0A-2p-zpR" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="479.46428571428567"/>
+        </scene>
         <!--Addition Func View Controller-->
         <scene sceneID="0vv-BD-q2v">
             <objects>
                 <viewController id="8gc-Mp-BHs" customClass="AdditionFuncViewController" customModule="FirstSprintApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZKt-zR-XHK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oO-hj-SRf">

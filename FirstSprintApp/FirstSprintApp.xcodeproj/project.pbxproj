@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C95E48A2364DD72001A8602 /* EnumListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95E4892364DD72001A8602 /* EnumListVC.swift */; };
 		95EE4E3223639B7700A0F785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E3123639B7700A0F785 /* AppDelegate.swift */; };
 		95EE4E3423639B7700A0F785 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E3323639B7700A0F785 /* ViewController.swift */; };
 		95EE4E3723639B7700A0F785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95EE4E3523639B7700A0F785 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C95E4892364DD72001A8602 /* EnumListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumListVC.swift; sourceTree = "<group>"; };
 		95EE4E2E23639B7700A0F785 /* FirstSprintApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstSprintApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95EE4E3123639B7700A0F785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95EE4E3323639B7700A0F785 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				95EE4E452363A1A200A0F785 /* AdditionFuncViewController.swift */,
 				95EE4E482363A88E00A0F785 /* BackGroundExtention.swift */,
 				95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */,
+				1C95E4892364DD72001A8602 /* EnumListVC.swift */,
 			);
 			path = "Addition func";
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				95EE4E3223639B7700A0F785 /* AppDelegate.swift in Sources */,
 				95EE4E492363A88E00A0F785 /* BackGroundExtention.swift in Sources */,
 				95EE4E4423639B9200A0F785 /* MultyPlusFunc.swift in Sources */,
+				1C95E48A2364DD72001A8602 /* EnumListVC.swift in Sources */,
 				B1C8FF5E2364C8C400AF12E2 /* Containers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,7 @@
 		95EE4E4423639B9200A0F785 /* MultyPlusFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */; };
 		95EE4E462363A1A200A0F785 /* AdditionFuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E452363A1A200A0F785 /* AdditionFuncViewController.swift */; };
 		95EE4E492363A88E00A0F785 /* BackGroundExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E482363A88E00A0F785 /* BackGroundExtention.swift */; };
+		B1C8FF5E2364C8C400AF12E2 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C8FF5D2364C8C400AF12E2 /* Containers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultyPlusFunc.swift; sourceTree = "<group>"; };
 		95EE4E452363A1A200A0F785 /* AdditionFuncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionFuncViewController.swift; sourceTree = "<group>"; };
 		95EE4E482363A88E00A0F785 /* BackGroundExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundExtention.swift; sourceTree = "<group>"; };
+		B1C8FF5D2364C8C400AF12E2 /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		95EE4E3023639B7700A0F785 /* FirstSprintApp */ = {
 			isa = PBXGroup;
 			children = (
+				B1C8FF5C2364C89D00AF12E2 /* ContainerClasses */,
 				95EE4E3123639B7700A0F785 /* AppDelegate.swift */,
 				95EE4E472363A61100A0F785 /* Addition func */,
 				95EE4E3323639B7700A0F785 /* ViewController.swift */,
@@ -79,6 +82,14 @@
 				95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */,
 			);
 			path = "Addition func";
+			sourceTree = "<group>";
+		};
+		B1C8FF5C2364C89D00AF12E2 /* ContainerClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B1C8FF5D2364C8C400AF12E2 /* Containers.swift */,
+			);
+			path = ContainerClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 				95EE4E3223639B7700A0F785 /* AppDelegate.swift in Sources */,
 				95EE4E492363A88E00A0F785 /* BackGroundExtention.swift in Sources */,
 				95EE4E4423639B9200A0F785 /* MultyPlusFunc.swift in Sources */,
+				B1C8FF5E2364C8C400AF12E2 /* Containers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

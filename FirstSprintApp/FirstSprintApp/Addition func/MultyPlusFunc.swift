@@ -1,4 +1,4 @@
-
+//Логика функции
 import Foundation
 
 protocol Addable {

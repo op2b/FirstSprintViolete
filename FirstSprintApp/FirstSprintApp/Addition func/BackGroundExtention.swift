@@ -1,6 +1,6 @@
 import UIKit
 
-
+//Кастомизация бекграунда (возможность ставить градиент)
 extension UIView {
     
     func addVerticalGradientLayer(topColor:UIColor, bottomColor:UIColor) {

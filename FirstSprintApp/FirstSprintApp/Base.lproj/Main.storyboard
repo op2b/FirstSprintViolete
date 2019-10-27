@@ -68,13 +68,13 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcP-jy-NlI">
                                 <rect key="frame" x="67.5" y="433" width="279" height="30"/>
-                                <color key="backgroundColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.5800980926" green="0.68064469100000002" blue="0.9765071273" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aYG-gC-Xp2"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="qPj-fY-A7A"/>
                                 </constraints>
                                 <state key="normal" title="  Добавить">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="addElement:" destination="t0A-2p-zpR" eventType="touchUpInside" id="0i5-4b-d9o"/>
@@ -83,13 +83,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIn-ff-k3E">
                                 <rect key="frame" x="68" y="471" width="278" height="30"/>
-                                <color key="backgroundColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.5800980926" green="0.68064469100000002" blue="0.9765071273" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6u9-vF-16m"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="278" id="WIw-7G-ObP"/>
                                 </constraints>
                                 <state key="normal" title="Удалить элемент">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="deleteElement:" destination="t0A-2p-zpR" eventType="touchUpInside" id="2oQ-2A-sen"/>
@@ -116,17 +116,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIz-yC-CeG">
+                                <rect key="frame" x="164" y="565" width="86" height="30"/>
+                                <color key="backgroundColor" red="0.5800980926" green="0.68064469100000002" blue="0.9765071273" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="Tf7-PM-Hca" eventType="touchUpInside" id="0MO-T0-eE2"/>
+                                    <action selector="deleteElement:" destination="t0A-2p-zpR" eventType="touchUpInside" id="LJo-2w-Swz"/>
+                                    <action selector="deleteElement:" destination="Tf7-PM-Hca" eventType="touchUpInside" id="Oqc-za-R5I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mcP-jy-NlI" firstAttribute="top" secondItem="7RG-Wn-fAi" secondAttribute="bottom" constant="8" id="2Cj-Fp-LoX"/>
                             <constraint firstItem="EDh-bu-LFx" firstAttribute="leading" secondItem="g5a-5N-gfV" secondAttribute="leading" constant="68" id="9Su-6V-aii"/>
                             <constraint firstItem="mcP-jy-NlI" firstAttribute="centerY" secondItem="4K3-8H-RsV" secondAttribute="centerY" id="JIA-qI-qWE"/>
+                            <constraint firstItem="iIz-yC-CeG" firstAttribute="top" secondItem="dIn-ff-k3E" secondAttribute="bottom" constant="64" id="OPg-aV-y26"/>
                             <constraint firstItem="7RG-Wn-fAi" firstAttribute="top" secondItem="g5a-5N-gfV" secondAttribute="top" constant="347" id="Z6S-bm-Gkd"/>
+                            <constraint firstItem="iIz-yC-CeG" firstAttribute="leading" secondItem="g5a-5N-gfV" secondAttribute="leading" constant="164" id="fWO-i0-7u4"/>
                             <constraint firstItem="EDh-bu-LFx" firstAttribute="top" secondItem="g5a-5N-gfV" secondAttribute="top" constant="155" id="ffx-oW-U5v"/>
                             <constraint firstItem="mcP-jy-NlI" firstAttribute="centerX" secondItem="4K3-8H-RsV" secondAttribute="centerX" id="iHc-eh-j4q"/>
                             <constraint firstItem="g5a-5N-gfV" firstAttribute="bottom" secondItem="dIn-ff-k3E" secondAttribute="bottom" constant="361" id="jjE-L2-63E"/>
                             <constraint firstItem="dIn-ff-k3E" firstAttribute="centerX" secondItem="mcP-jy-NlI" secondAttribute="centerX" id="pi2-EZ-lxf"/>
+                            <constraint firstItem="g5a-5N-gfV" firstAttribute="trailing" secondItem="iIz-yC-CeG" secondAttribute="trailing" constant="164" id="qjB-6h-PLx"/>
                             <constraint firstItem="7RG-Wn-fAi" firstAttribute="top" relation="lessThanOrEqual" secondItem="EDh-bu-LFx" secondAttribute="bottom" constant="30" id="x11-Lf-woo"/>
                             <constraint firstItem="7RG-Wn-fAi" firstAttribute="centerX" secondItem="mcP-jy-NlI" secondAttribute="centerX" id="x4Z-H6-J98"/>
                             <constraint firstItem="dIn-ff-k3E" firstAttribute="top" secondItem="mcP-jy-NlI" secondAttribute="bottom" constant="8" id="zHx-N0-6Xh"/>
@@ -177,7 +192,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UnS-MN-ftr">
-                                <rect key="frame" x="108" y="338" width="198" height="78.5"/>
+                                <rect key="frame" x="108" y="337.5" width="198" height="78.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pND-9W-3wu">
                                         <rect key="frame" x="0.0" y="0.0" width="59.5" height="20.5"/>
@@ -200,7 +215,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Axq-vH-Vyc">
-                                <rect key="frame" x="108" y="430" width="198" height="78.5"/>
+                                <rect key="frame" x="108" y="429" width="198" height="78.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Float:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzA-AW-Whz">
                                         <rect key="frame" x="0.0" y="0.0" width="42.5" height="20.5"/>
@@ -223,7 +238,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MKo-3u-fJ6">
-                                <rect key="frame" x="108" y="521" width="198" height="78.5"/>
+                                <rect key="frame" x="108" y="519.5" width="198" height="78.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="String:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv9-6h-bOV">
                                         <rect key="frame" x="0.0" y="0.0" width="50.5" height="20.5"/>
@@ -246,7 +261,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qid-AO-YYt">
-                                <rect key="frame" x="108" y="621" width="198" height="78.5"/>
+                                <rect key="frame" x="108" y="619" width="198" height="78.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boolean:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yA8-Dy-X5t">
                                         <rect key="frame" x="0.0" y="0.0" width="66.5" height="20.5"/>

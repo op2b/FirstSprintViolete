@@ -44,5 +44,8 @@ class AdditionFuncViewController: UIViewController {
         boolLabel.text = String(add(boolOne, boolTwo))
         
     }
-
+    @IBAction func backButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

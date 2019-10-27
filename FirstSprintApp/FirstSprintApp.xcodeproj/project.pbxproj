@@ -64,9 +64,10 @@
 		95EE4E3023639B7700A0F785 /* FirstSprintApp */ = {
 			isa = PBXGroup;
 			children = (
+				B1B50C702365A8DF0041743C /* EnumBasedLinkedList */,
 				B1C8FF5C2364C89D00AF12E2 /* ContainerClasses */,
 				95EE4E3123639B7700A0F785 /* AppDelegate.swift */,
-				95EE4E472363A61100A0F785 /* Addition func */,
+				95EE4E472363A61100A0F785 /* GenericAdditionFunc */,
 				95EE4E3323639B7700A0F785 /* ViewController.swift */,
 				95EE4E3523639B7700A0F785 /* Main.storyboard */,
 				95EE4E3823639B7B00A0F785 /* Assets.xcassets */,
@@ -76,15 +77,22 @@
 			path = FirstSprintApp;
 			sourceTree = "<group>";
 		};
-		95EE4E472363A61100A0F785 /* Addition func */ = {
+		95EE4E472363A61100A0F785 /* GenericAdditionFunc */ = {
 			isa = PBXGroup;
 			children = (
 				95EE4E452363A1A200A0F785 /* AdditionFuncViewController.swift */,
 				95EE4E482363A88E00A0F785 /* BackGroundExtention.swift */,
 				95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */,
+			);
+			path = GenericAdditionFunc;
+			sourceTree = "<group>";
+		};
+		B1B50C702365A8DF0041743C /* EnumBasedLinkedList */ = {
+			isa = PBXGroup;
+			children = (
 				1C95E4892364DD72001A8602 /* EnumListVC.swift */,
 			);
-			path = "Addition func";
+			path = EnumBasedLinkedList;
 			sourceTree = "<group>";
 		};
 		B1C8FF5C2364C89D00AF12E2 /* ContainerClasses */ = {

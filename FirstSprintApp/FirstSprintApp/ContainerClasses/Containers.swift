@@ -42,6 +42,12 @@ public class Queue<Element>: Container {
     }
 }
 
+extension Queue: CustomStringConvertible {
+    public var description: String {
+        return "\(data)"
+    }
+}
+
 // Doubly Linked List implementation comnforming to Container protocol
 
 public class List<T>: Container {

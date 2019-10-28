@@ -370,7 +370,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-fM-LtS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-fM-LtS">
                                 <rect key="frame" x="171" y="832" width="72" height="30"/>
                                 <color key="backgroundColor" red="0.63486731380000005" green="0.7415473185" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="назад">
@@ -397,7 +397,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя человека, добавленного в список" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-Ef-LmT">
-                                <rect key="frame" x="68" y="535" width="278" height="31"/>
+                                <rect key="frame" x="68" y="534.5" width="278" height="31.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -422,6 +422,7 @@
                             <constraint firstItem="rmn-tI-jlr" firstAttribute="leading" secondItem="od8-Bi-w2c" secondAttribute="leading" id="4Sy-qN-Vk5"/>
                             <constraint firstItem="rmn-tI-jlr" firstAttribute="leading" secondItem="6Fa-nu-RaV" secondAttribute="leading" constant="73" id="6tb-mr-Maf"/>
                             <constraint firstItem="bzh-Ef-LmT" firstAttribute="top" secondItem="t7G-jM-hJi" secondAttribute="bottom" constant="38" id="ILL-PL-IuJ"/>
+                            <constraint firstItem="Qmt-fM-LtS" firstAttribute="bottom" secondItem="6Fa-nu-RaV" secondAttribute="bottom" id="UcU-NB-LbD"/>
                             <constraint firstAttribute="bottom" secondItem="rmn-tI-jlr" secondAttribute="bottom" constant="187" id="VT1-m6-GaG"/>
                             <constraint firstItem="t7G-jM-hJi" firstAttribute="trailing" secondItem="rmn-tI-jlr" secondAttribute="trailing" id="XUf-Wm-wdp"/>
                             <constraint firstItem="rmn-tI-jlr" firstAttribute="top" secondItem="bzh-Ef-LmT" secondAttribute="bottom" constant="65" id="aFQ-bu-x7g"/>
@@ -429,6 +430,7 @@
                             <constraint firstItem="t7G-jM-hJi" firstAttribute="centerX" secondItem="Qmt-fM-LtS" secondAttribute="centerX" id="fjG-bT-oU1"/>
                             <constraint firstItem="t7G-jM-hJi" firstAttribute="centerX" secondItem="qPI-PW-BDZ" secondAttribute="centerX" id="kjV-js-FjF"/>
                             <constraint firstItem="t7G-jM-hJi" firstAttribute="trailing" secondItem="bzh-Ef-LmT" secondAttribute="trailing" id="lIA-T3-6l0"/>
+                            <constraint firstItem="Qmt-fM-LtS" firstAttribute="leading" secondItem="6Fa-nu-RaV" secondAttribute="leading" constant="171" id="mI6-vh-xzQ"/>
                             <constraint firstItem="t7G-jM-hJi" firstAttribute="centerY" secondItem="qPI-PW-BDZ" secondAttribute="centerY" id="qkq-2u-VHu"/>
                             <constraint firstItem="t7G-jM-hJi" firstAttribute="leading" secondItem="bzh-Ef-LmT" secondAttribute="leading" id="quN-nc-weh"/>
                         </constraints>

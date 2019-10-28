@@ -164,9 +164,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFY-aB-fot">
-                                <rect key="frame" x="168" y="794" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFY-aB-fot">
+                                <rect key="frame" x="168" y="832" width="79" height="30"/>
                                 <color key="backgroundColor" red="0.63486731380961436" green="0.74154731847742572" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="далее">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -175,27 +174,18 @@
                                     <segue destination="faA-U8-Ypo" kind="show" id="lPs-1a-UD2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Люди в очереди: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="267" translatesAutoresizingMaskIntoConstraints="NO" id="rrX-Rl-Ocp">
-                                <rect key="frame" x="68" y="294" width="278" height="158"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="278" id="U7y-SE-Xy6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя человека, встающего в очередь!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eho-iN-O9g">
-                                <rect key="frame" x="68" y="460" width="278" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя человека, встающего в очередь!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eho-iN-O9g">
+                                <rect key="frame" x="68" y="573.5" width="278" height="30.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6V-p5-bDf">
-                                <rect key="frame" x="68" y="545" width="278" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6V-p5-bDf">
+                                <rect key="frame" x="68" y="631" width="278" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="zdq-sx-IB8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Добавить человека в очередь">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -204,9 +194,8 @@
                                     <action selector="enqueuePerson:" destination="4Ht-3L-5aq" eventType="touchUpInside" id="2eD-sX-8gf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54Z-UP-29a">
-                                <rect key="frame" x="68" y="657" width="278" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54Z-UP-29a">
+                                <rect key="frame" x="68" y="721" width="278" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Удалить человека из очереди">
@@ -216,14 +205,47 @@
                                     <action selector="dequeuePerson:" destination="4Ht-3L-5aq" eventType="touchUpInside" id="QWj-5Y-Bn3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Очередь" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QO-Js-GEU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Очередь" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QO-Js-GEU">
                                 <rect key="frame" x="119" y="44" width="177" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="fee-ba-BcV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Люди в очереди: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="267" translatesAutoresizingMaskIntoConstraints="NO" id="rrX-Rl-Ocp">
+                                <rect key="frame" x="68" y="399.5" width="278" height="97"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="48Q-TX-Hmh"/>
+                                    <constraint firstAttribute="width" constant="278" id="U7y-SE-Xy6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2QO-Js-GEU" firstAttribute="top" secondItem="cWG-f8-3nU" secondAttribute="top" id="1hG-uV-Fle"/>
+                            <constraint firstItem="rrX-Rl-Ocp" firstAttribute="centerX" secondItem="wFY-aB-fot" secondAttribute="centerX" id="6Qt-nE-cfu"/>
+                            <constraint firstItem="2QO-Js-GEU" firstAttribute="leading" secondItem="cWG-f8-3nU" secondAttribute="leading" constant="119" id="71y-FH-jZY"/>
+                            <constraint firstAttribute="bottom" secondItem="N6V-p5-bDf" secondAttribute="bottom" constant="198" id="8SM-4M-Dbe"/>
+                            <constraint firstItem="rrX-Rl-Ocp" firstAttribute="leading" secondItem="54Z-UP-29a" secondAttribute="leading" id="8e2-pc-mXa"/>
+                            <constraint firstItem="rrX-Rl-Ocp" firstAttribute="centerX" secondItem="Qsf-9S-Tqc" secondAttribute="centerX" id="96c-TU-2rT"/>
+                            <constraint firstItem="N6V-p5-bDf" firstAttribute="top" secondItem="Eho-iN-O9g" secondAttribute="bottom" constant="27" id="BOe-R6-xgq"/>
+                            <constraint firstItem="rrX-Rl-Ocp" firstAttribute="leading" secondItem="N6V-p5-bDf" secondAttribute="leading" id="JtC-b9-Qgq"/>
+                            <constraint firstItem="wFY-aB-fot" firstAttribute="leading" secondItem="cWG-f8-3nU" secondAttribute="leading" constant="168" id="N0t-N1-gIZ"/>
+                            <constraint firstItem="rrX-Rl-Ocp" firstAttribute="trailing" secondItem="Eho-iN-O9g" secondAttribute="trailing" id="QUv-Uw-JG7"/>
+                            <constraint firstItem="rrX-Rl-Ocp" firstAttribute="centerY" secondItem="Qsf-9S-Tqc" secondAttribute="centerY" id="UVh-1k-1TG"/>
+                            <constraint firstItem="Eho-iN-O9g" firstAttribute="top" secondItem="rrX-Rl-Ocp" secondAttribute="bottom" constant="77" id="XaZ-jd-Pdp"/>
+                            <constraint firstItem="rrX-Rl-Ocp" firstAttribute="centerX" secondItem="2QO-Js-GEU" secondAttribute="centerX" id="Xx1-LK-JJE"/>
+                            <constraint firstItem="wFY-aB-fot" firstAttribute="bottom" secondItem="cWG-f8-3nU" secondAttribute="bottom" id="fky-XK-xBP"/>
+                            <constraint firstItem="rrX-Rl-Ocp" firstAttribute="trailing" secondItem="54Z-UP-29a" secondAttribute="trailing" id="kSa-xT-lly"/>
+                            <constraint firstItem="rrX-Rl-Ocp" firstAttribute="leading" secondItem="Eho-iN-O9g" secondAttribute="leading" id="n75-yI-TtA"/>
+                            <constraint firstItem="54Z-UP-29a" firstAttribute="top" secondItem="N6V-p5-bDf" secondAttribute="bottom" constant="23" id="rdG-t0-2FW"/>
+                            <constraint firstItem="rrX-Rl-Ocp" firstAttribute="trailing" secondItem="N6V-p5-bDf" secondAttribute="trailing" id="vHo-vl-xML"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cWG-f8-3nU"/>
                     </view>
                     <connections>
@@ -348,8 +370,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Двусвязный список" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od8-Bi-w2c">
+                                <rect key="frame" x="72" y="44" width="269" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-fM-LtS">
-                                <rect key="frame" x="170" y="798" width="72" height="30"/>
+                                <rect key="frame" x="171" y="832" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.63486731380000005" green="0.7415473185" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="назад">
@@ -359,12 +387,6 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="knX-s0-Ugb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Двусвязный список" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od8-Bi-w2c">
-                                <rect key="frame" x="72" y="44" width="269" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Fa-nu-RaV"/>

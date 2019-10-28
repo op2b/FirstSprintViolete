@@ -370,15 +370,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Двусвязный список" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od8-Bi-w2c">
-                                <rect key="frame" x="72" y="44" width="269" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-fM-LtS">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-fM-LtS">
                                 <rect key="frame" x="171" y="832" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.63486731380000005" green="0.7415473185" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="назад">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -387,10 +380,64 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="knX-s0-Ugb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Двусвязный список" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od8-Bi-w2c">
+                                <rect key="frame" x="73" y="16" width="269" height="71"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Список людей: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="267" translatesAutoresizingMaskIntoConstraints="NO" id="t7G-jM-hJi">
+                                <rect key="frame" x="68" y="399.5" width="278" height="97"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="iBr-nE-aEu"/>
+                                    <constraint firstAttribute="width" constant="278" id="k8Z-BC-QAe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя человека, добавленного в список" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-Ef-LmT">
+                                <rect key="frame" x="68" y="535" width="278" height="31"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmn-tI-jlr">
+                                <rect key="frame" x="73" y="631" width="273" height="78"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="l9z-TH-Mhb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Добавить человека">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPersonToList:" destination="faA-U8-Ypo" eventType="touchUpInside" id="R1y-Vf-XR2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rmn-tI-jlr" firstAttribute="leading" secondItem="od8-Bi-w2c" secondAttribute="leading" id="4Sy-qN-Vk5"/>
+                            <constraint firstItem="rmn-tI-jlr" firstAttribute="leading" secondItem="6Fa-nu-RaV" secondAttribute="leading" constant="73" id="6tb-mr-Maf"/>
+                            <constraint firstItem="bzh-Ef-LmT" firstAttribute="top" secondItem="t7G-jM-hJi" secondAttribute="bottom" constant="38" id="ILL-PL-IuJ"/>
+                            <constraint firstAttribute="bottom" secondItem="rmn-tI-jlr" secondAttribute="bottom" constant="187" id="VT1-m6-GaG"/>
+                            <constraint firstItem="t7G-jM-hJi" firstAttribute="trailing" secondItem="rmn-tI-jlr" secondAttribute="trailing" id="XUf-Wm-wdp"/>
+                            <constraint firstItem="rmn-tI-jlr" firstAttribute="top" secondItem="bzh-Ef-LmT" secondAttribute="bottom" constant="65" id="aFQ-bu-x7g"/>
+                            <constraint firstItem="t7G-jM-hJi" firstAttribute="centerX" secondItem="od8-Bi-w2c" secondAttribute="centerX" id="aaZ-Lo-XlY"/>
+                            <constraint firstItem="t7G-jM-hJi" firstAttribute="centerX" secondItem="Qmt-fM-LtS" secondAttribute="centerX" id="fjG-bT-oU1"/>
+                            <constraint firstItem="t7G-jM-hJi" firstAttribute="centerX" secondItem="qPI-PW-BDZ" secondAttribute="centerX" id="kjV-js-FjF"/>
+                            <constraint firstItem="t7G-jM-hJi" firstAttribute="trailing" secondItem="bzh-Ef-LmT" secondAttribute="trailing" id="lIA-T3-6l0"/>
+                            <constraint firstItem="t7G-jM-hJi" firstAttribute="centerY" secondItem="qPI-PW-BDZ" secondAttribute="centerY" id="qkq-2u-VHu"/>
+                            <constraint firstItem="t7G-jM-hJi" firstAttribute="leading" secondItem="bzh-Ef-LmT" secondAttribute="leading" id="quN-nc-weh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Fa-nu-RaV"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="bzh-Ef-LmT" id="bQk-pa-9EQ"/>
+                        <outlet property="textLabel" destination="t7G-jM-hJi" id="hy4-PG-EL5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9SQ-iZ-LBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

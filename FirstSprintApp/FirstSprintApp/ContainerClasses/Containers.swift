@@ -103,3 +103,20 @@ public class List<T>: Container {
         head = nil
     }
 }
+
+
+extension List: CustomStringConvertible {
+    public var description: String {
+        var desc_str = "["
+        guard let node = head else {
+            desc_str += "]"
+            return desc_str
+        }
+        desc_str += "\(node.data), "
+        while let node = node.next {
+            desc_str += "\(node.data), "
+        }
+        desc_str += "]"
+        return desc_str
+    }
+}

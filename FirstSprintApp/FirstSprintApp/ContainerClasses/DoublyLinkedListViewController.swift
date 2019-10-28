@@ -10,6 +10,13 @@ import UIKit
 
 class DoublyLinkedListViewController: UIViewController {
 
+    
+    let list = List<String>()
+    
+    
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let primaryColor = UIColor(red: 210/255, green: 109/255, blue: 128/255, alpha: 1)
@@ -19,7 +26,17 @@ class DoublyLinkedListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func addPersonToList(_ sender: Any) {
+        guard let text = textField.text else { return }
+        list.append(text)
+        textField.text = ""
+        var str = "["
+        for i in (0..<list.count-1) {
+            str += "\(list[i]!), "
+        }
+        str += "\(list[list.count - 1]!)]"
+        textLabel.text = "Текущий список : \(str)"
+    }
     /*
     // MARK: - Navigation
 

@@ -16,6 +16,8 @@
 		95EE4E4423639B9200A0F785 /* MultyPlusFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */; };
 		95EE4E462363A1A200A0F785 /* AdditionFuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E452363A1A200A0F785 /* AdditionFuncViewController.swift */; };
 		95EE4E492363A88E00A0F785 /* BackGroundExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE4E482363A88E00A0F785 /* BackGroundExtention.swift */; };
+		B1031438236666C7002B0E88 /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1031437236666C7002B0E88 /* QueueViewController.swift */; };
+		B103143A236666FE002B0E88 /* DoublyLinkedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1031439236666FE002B0E88 /* DoublyLinkedListViewController.swift */; };
 		B1C8FF5E2364C8C400AF12E2 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C8FF5D2364C8C400AF12E2 /* Containers.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		95EE4E4323639B9200A0F785 /* MultyPlusFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultyPlusFunc.swift; sourceTree = "<group>"; };
 		95EE4E452363A1A200A0F785 /* AdditionFuncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionFuncViewController.swift; sourceTree = "<group>"; };
 		95EE4E482363A88E00A0F785 /* BackGroundExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundExtention.swift; sourceTree = "<group>"; };
+		B1031437236666C7002B0E88 /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
+		B1031439236666FE002B0E88 /* DoublyLinkedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedListViewController.swift; sourceTree = "<group>"; };
 		B1C8FF5D2364C8C400AF12E2 /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				B1C8FF5D2364C8C400AF12E2 /* Containers.swift */,
+				B1031437236666C7002B0E88 /* QueueViewController.swift */,
+				B1031439236666FE002B0E88 /* DoublyLinkedListViewController.swift */,
 			);
 			path = ContainerClasses;
 			sourceTree = "<group>";
@@ -174,10 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1031438236666C7002B0E88 /* QueueViewController.swift in Sources */,
 				95EE4E462363A1A200A0F785 /* AdditionFuncViewController.swift in Sources */,
 				95EE4E3423639B7700A0F785 /* ViewController.swift in Sources */,
 				95EE4E3223639B7700A0F785 /* AppDelegate.swift in Sources */,
 				95EE4E492363A88E00A0F785 /* BackGroundExtention.swift in Sources */,
+				B103143A236666FE002B0E88 /* DoublyLinkedListViewController.swift in Sources */,
 				95EE4E4423639B9200A0F785 /* MultyPlusFunc.swift in Sources */,
 				1C95E48A2364DD72001A8602 /* EnumListVC.swift in Sources */,
 				B1C8FF5E2364C8C400AF12E2 /* Containers.swift in Sources */,
